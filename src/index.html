@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Gulp</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    @@include('_header.html')
+    <main>
+        <section class="first-bags">
+            <div class="container">
+                <div class="first-bags__wrapper">
+                    <div class="first-bags__article">
+                        <h1 class="first-bags__title main-title white">
+                            Подберём пакет <br>
+                            услуг под размеры <br>
+                            вашегo бизнеса
+                        </h1>
+                        <p class="first-bags__description">
+                            Три пакета услуг на ваш выбор и бюджет
+                        </p>
+                        <button class="btn btn-primary">
+                            <span class="btn__text">
+                                Рассчитать
+                            </span>
+                            <svg class="icon-right" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.66663 11.3333L12 8L8.66663 4.66666" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 11.3333L7.33333 8L4 4.66666" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="first-bags__preview">
+                        <div class="first-bags__preview__inner">
+                            <div class="first-bags__preview__inner__shadows">
+                                <div class="first-bags__preview__inner__shadows__item" data-id="1">
+                                    <img src="./img/shadow-1.png" alt="" class="first-bags__preview__inner__shadows__item__img">
+                                </div>
+                                <div class="first-bags__preview__inner__shadows__item" data-id="2">
+                                    <img src="./img/shadow-1.png" alt="" class="first-bags__preview__inner__shadows__item__img">
+                                </div>
+                                <div class="first-bags__preview__inner__shadows__item" data-id="3">
+                                    <img src="./img/shadow-1.png" alt="" class="first-bags__preview__inner__shadows__item__img">
+                                </div>
+                            </div>
+
+                            <div class="first-bags__preview__inner__spots">
+                                <div class="first-bags__preview__inner__spots__item" data-id="1"></div>
+                                <div class="first-bags__preview__inner__spots__item" data-id="2"></div>
+                                <div class="first-bags__preview__inner__spots__item" data-id="3"></div>
+                            </div>
+                            <div class="first-bags__preview__inner__bags">
+                                <div class="first-bags__preview__inner__bags__hovers">
+                                    <div class="first-bags__preview__inner__bags__hovers__item" data-target="1"></div>
+                                    <div class="first-bags__preview__inner__bags__hovers__item" data-target="2"></div>
+                                    <div class="first-bags__preview__inner__bags__hovers__item" data-target="3"></div>
+                                </div>
+                                <img src="./img/bags.png" alt="" class="first-bags__preview__inner__bags__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="your-bag">
+            <div class="container">
+                <div class="your-bag__wrapper">
+                    <h2 class="your-bag__title main-title">
+                        Твоя упаковка
+                    </h2>
+                    <div class="your-bag__grid">
+                        <div class="your-bag__grid__item">
+                            <img src="./img/bag-bg-1.png" alt="" class="your-bag__grid__item__bg">
+
+                            <svg class="your-bag__grid__item__tr" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.17157 4.82843L4.82843 5.17157C1.92232 8.07768 0.469266 9.53073 0.980668 10.7654C1.49207 12 3.547 12 7.65685 12H8C9.88562 12 10.8284 12 11.4142 11.4142C12 10.8284 12 9.88562 12 8V7.65685C12 3.547 12 1.49207 10.7654 0.980668C9.53073 0.469266 8.07768 1.92232 5.17158 4.82842L5.17157 4.82843Z" fill="#EDEDED"/>
+                            </svg>
+
+                            <div class="your-bag__grid__item__content">
+                                <img src="./img/bag-1.png" alt="" class="your-bag__grid__item__img">
+                                <button class="your-bag__grid__item__btn btn transparent smoke">
+                                    <span class="btn__text">
+                                        Подробнее
+                                    </span>
+                                    <svg class="icon-right-first" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.29736 2.55225L6.52813 6.05225L3.29736 9.55225" stroke="#749192" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="your-bag__grid__item__info">
+                                <div class="your-bag__grid__item__info__inner">
+                                    <img src="./img/bag-info-icon-1.png" alt="" class="your-bag__grid__item__info__icon">
+                                    <div class="your-bag__grid__item__info__article">
+                                        <h3  class="your-bag__grid__item__info__title">
+                                            Small
+                                        </h3>
+                                        <ul class="your-bag__grid__item__info__list">
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Посты
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Сторис
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Рилс
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Ведение
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Дизайн
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Таргет
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Проведение <br>
+                                                    конкурсов
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn transparent-no-border your-bag__grid__item__info__btn">
+                                        <span class="btn__text">
+                                            Заказать
+                                        </span>
+                                        <svg class="icon-right" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.66663 11.3333L12 8L8.66663 4.66666" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4 11.3333L7.33333 8L4 4.66666" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="your-bag__grid__item__info__bg">
+                                    <img src="./img/bag-no-text-1.png" alt="" class="your-bag__grid__item__info__bg__img">
+                                </div>
+                                <svg class="your-bag__grid__item__info__tr" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.82843 7.17157L7.17157 6.82843C10.0777 3.92232 11.5307 2.46927 11.0193 1.23463C10.5079 -3.05286e-07 8.453 -4.84934e-07 4.34315 -8.44229e-07L4 -8.74228e-07C2.11438 -1.03907e-06 1.17157 -1.1215e-06 0.585788 0.585786C1.1215e-06 1.17157 1.03907e-06 2.11438 8.74228e-07 4L8.44229e-07 4.34314C4.84934e-07 8.453 3.05286e-07 10.5079 1.23463 11.0193C2.46927 11.5307 3.92232 10.0777 6.82842 7.17158L6.82843 7.17157Z" fill="#EDEDED"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="your-bag__grid__item">
+
+                            <img src="./img/bag-bg-2.png" alt="" class="your-bag__grid__item__bg">
+
+                            <svg class="your-bag__grid__item__tr" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.17157 4.82843L4.82843 5.17157C1.92232 8.07768 0.469266 9.53073 0.980668 10.7654C1.49207 12 3.547 12 7.65685 12H8C9.88562 12 10.8284 12 11.4142 11.4142C12 10.8284 12 9.88562 12 8V7.65685C12 3.547 12 1.49207 10.7654 0.980668C9.53073 0.469266 8.07768 1.92232 5.17158 4.82842L5.17157 4.82843Z" fill="#EDEDED"/>
+                            </svg>
+
+                            <div class="your-bag__grid__item__content">
+                                <img src="./img/bag-2.png" alt="" class="your-bag__grid__item__img">
+                                <button class="your-bag__grid__item__btn btn transparent smoke green">
+                                    <span class="btn__text">
+                                        Подробнее
+                                    </span>
+
+                                    <svg class="icon-right-first" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.29736 2.55225L6.52813 6.05225L3.29736 9.55225" stroke="#74B654" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="your-bag__grid__item__info">
+                                <div class="your-bag__grid__item__info__inner">
+                                    <img src="./img/bag-info-icon-2.png" alt="" class="your-bag__grid__item__info__icon">
+                                    <div class="your-bag__grid__item__info__article">
+                                        <h3  class="your-bag__grid__item__info__title">
+                                            Medium
+                                        </h3>
+                                        <ul class="your-bag__grid__item__info__list">
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Посты
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Сторис
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Рилс
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Ведение
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Дизайн
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Таргет
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Проведение <br>
+                                                    конкурсов
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn transparent-no-border your-bag__grid__item__info__btn">
+                                        <span class="btn__text">
+                                            Заказать
+                                        </span>
+                                        <svg class="icon-right" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.66663 11.3333L12 8L8.66663 4.66666" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4 11.3333L7.33333 8L4 4.66666" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="your-bag__grid__item__info__bg">
+                                    <img src="./img/bag-no-text-1.png" alt="" class="your-bag__grid__item__info__bg__img">
+                                </div>
+                                <svg class="your-bag__grid__item__info__tr" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.82843 7.17157L7.17157 6.82843C10.0777 3.92232 11.5307 2.46927 11.0193 1.23463C10.5079 -3.05286e-07 8.453 -4.84934e-07 4.34315 -8.44229e-07L4 -8.74228e-07C2.11438 -1.03907e-06 1.17157 -1.1215e-06 0.585788 0.585786C1.1215e-06 1.17157 1.03907e-06 2.11438 8.74228e-07 4L8.44229e-07 4.34314C4.84934e-07 8.453 3.05286e-07 10.5079 1.23463 11.0193C2.46927 11.5307 3.92232 10.0777 6.82842 7.17158L6.82843 7.17157Z" fill="#EDEDED"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="your-bag__grid__item">
+
+                            <img src="./img/bag-bg-3.png" alt="" class="your-bag__grid__item__bg">
+
+                            <svg class="your-bag__grid__item__tr" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.17157 4.82843L4.82843 5.17157C1.92232 8.07768 0.469266 9.53073 0.980668 10.7654C1.49207 12 3.547 12 7.65685 12H8C9.88562 12 10.8284 12 11.4142 11.4142C12 10.8284 12 9.88562 12 8V7.65685C12 3.547 12 1.49207 10.7654 0.980668C9.53073 0.469266 8.07768 1.92232 5.17158 4.82842L5.17157 4.82843Z" fill="#EDEDED"/>
+                            </svg>
+
+                            <div class="your-bag__grid__item__content">
+                                <img src="./img/bag-3.png" alt="" class="your-bag__grid__item__img">
+                                <button class="your-bag__grid__item__btn btn transparent soft-red">
+                                    <span class="btn__text">
+                                        Подробнее
+                                    </span>
+
+                                    <svg class="icon-right-first" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.29736 2.55231L6.52813 6.05231L3.29736 9.55231" stroke="#A06262" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="your-bag__grid__item__info">
+                                <div class="your-bag__grid__item__info__inner">
+                                    <img src="./img/bag-info-icon-3.png" alt="" class="your-bag__grid__item__info__icon">
+                                    <div class="your-bag__grid__item__info__article">
+                                        <h3  class="your-bag__grid__item__info__title">
+                                            Small
+                                        </h3>
+                                        <ul class="your-bag__grid__item__info__list">
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Посты
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Сторис
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Рилс
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Ведение
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Дизайн
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Таргет
+                                                </span>
+                                            </li>
+                                            <li class="your-bag__grid__item__info__list__item">
+                                                <svg class="your-bag__grid__item__info__list__item__star" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 0L6.545 3.13L10 3.635L7.5 6.07L8.09 9.51L5 7.885L1.91 9.51L2.5 6.07L0 3.635L3.455 3.13L5 0Z" fill="#ECECEC"/>
+                                                </svg>
+                                                <span class="your-bag__grid__item__info__list__item__text">
+                                                    Проведение <br>
+                                                    конкурсов
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn transparent-no-border your-bag__grid__item__info__btn">
+                                        <span class="btn__text">
+                                            Заказать
+                                        </span>
+                                        <svg class="icon-right" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.66663 11.3333L12 8L8.66663 4.66666" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4 11.3333L7.33333 8L4 4.66666" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="your-bag__grid__item__info__bg">
+                                    <img src="./img/bag-no-text-3.png" alt="" class="your-bag__grid__item__info__bg__img">
+                                </div>
+                                <svg class="your-bag__grid__item__info__tr" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.82843 7.17157L7.17157 6.82843C10.0777 3.92232 11.5307 2.46927 11.0193 1.23463C10.5079 -3.05286e-07 8.453 -4.84934e-07 4.34315 -8.44229e-07L4 -8.74228e-07C2.11438 -1.03907e-06 1.17157 -1.1215e-06 0.585788 0.585786C1.1215e-06 1.17157 1.03907e-06 2.11438 8.74228e-07 4L8.44229e-07 4.34314C4.84934e-07 8.453 3.05286e-07 10.5079 1.23463 11.0193C2.46927 11.5307 3.92232 10.0777 6.82842 7.17158L6.82843 7.17157Z" fill="#EDEDED"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/your-bag-bg.png" alt="" class="your-bag__bg">
+            <img src="./img/cub-1.png" alt="" class="your-bag__cub-1">
+            <img src="./img/cub-2.png" alt="" class="your-bag__cub-2">
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio__wrapper">
+                    <h2 class="portfolio__title main-title text-white white">
+                        Портфолио
+                    </h2>
+                    <div class="portfolio__content">
+                        <div class="portfolio__content__left">
+                            <div class="portfolio__device" style="background-image: url(./img/device.png);">
+                                <div class="portfolio__device__screen">
+                                    <div class="portfolio__device__screen__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="portfolio__device__screen__slider__item swiper-slide">
+                                                <img src="./img/account-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio__device__screen__slider__item swiper-slide">
+                                                <img src="./img/account-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio__device__screen__slider__item swiper-slide">
+                                                <img src="./img/account-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio__device__screen__slider__item swiper-slide">
+                                                <img src="./img/account-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio__device__screen__slider__item swiper-slide">
+                                                <img src="./img/account-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio__device__screen__slider__item swiper-slide">
+                                                <img src="./img/account-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__content__right">
+                            <div class="portfolio__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="portfolio__slider__item swiper-slide">
+                                        <h3 class="portfolio__slider__item__title">
+                                            Freedom Finance Insurence
+                                        </h3>
+                                        <p class="portfolio__slider__item__description">
+                                            <b>Цель проекта:</b> Сайт рыбатекст поможет дизайнеру, верстальщику,
+                                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на
+                                            русском языке, а начинающему оратору отточить навык публичных выступлений. <br> <br>
+
+                                            <b>Проделанная работа:</b> При создании генератора мы использовали небезизвестный
+                                            универсальный код речей. Текст генерируется абзацами случайным образом от двух
+                                            до десяти предложений в абзаце, что позволяет сделать текст более привлекательным
+                                            и живым для визуально-слухового восприятия.
+                                            <br> <br>
+
+                                            <b>Результат:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                            сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском
+                                            языке, а начинающему оратору отточить навык публичных выступлений в домашних
+                                            условиях.
+                                        </p>
+                                        <div class="portfolio__slider__item__params">
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">5120</div>
+                                                <div class="portfolio__slider__item__params__item__text">Подписчиков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">10250</div>
+                                                <div class="portfolio__slider__item__params__item__text">Лайков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">2500</div>
+                                                <div class="portfolio__slider__item__params__item__text">Постов</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__slider__item swiper-slide">
+                                        <h3 class="portfolio__slider__item__title">
+                                            Freedom Finance Insurence
+                                        </h3>
+                                        <p class="portfolio__slider__item__description">
+                                            <b>Цель проекта:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, <br>
+                                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на <br>
+                                            русском языке, а начинающему оратору отточить навык публичных выступлений. <br> <br>
+
+                                            <b>Проделанная работа:</b> При создании генератора мы использовали небезизвестный <br>
+                                            универсальный код речей. Текст генерируется абзацами случайным образом от двух <br>
+                                            до десяти предложений в абзаце, что позволяет сделать текст более привлекательным <br>
+                                            и живым для визуально-слухового восприятия.<br> <br>
+
+                                            <b>Результат:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру <br>
+                                            сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском <br>
+                                            языке, а начинающему оратору отточить навык публичных выступлений в домашних <br>
+                                            условиях.
+                                        </p>
+                                        <div class="portfolio__slider__item__params">
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">5120</div>
+                                                <div class="portfolio__slider__item__params__item__text">Подписчиков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">10250</div>
+                                                <div class="portfolio__slider__item__params__item__text">Лайков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">2500</div>
+                                                <div class="portfolio__slider__item__params__item__text">Постов</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__slider__item swiper-slide">
+                                        <h3 class="portfolio__slider__item__title">
+                                            Freedom Finance Insurence
+                                        </h3>
+                                        <p class="portfolio__slider__item__description">
+                                            <b>Цель проекта:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, <br>
+                                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на <br>
+                                            русском языке, а начинающему оратору отточить навык публичных выступлений. <br> <br>
+
+                                            <b>Проделанная работа:</b> При создании генератора мы использовали небезизвестный <br>
+                                            универсальный код речей. Текст генерируется абзацами случайным образом от двух <br>
+                                            до десяти предложений в абзаце, что позволяет сделать текст более привлекательным <br>
+                                            и живым для визуально-слухового восприятия.<br> <br>
+
+                                            <b>Результат:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру <br>
+                                            сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском <br>
+                                            языке, а начинающему оратору отточить навык публичных выступлений в домашних <br>
+                                            условиях.
+                                        </p>
+                                        <div class="portfolio__slider__item__params">
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">5120</div>
+                                                <div class="portfolio__slider__item__params__item__text">Подписчиков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">10250</div>
+                                                <div class="portfolio__slider__item__params__item__text">Лайков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">2500</div>
+                                                <div class="portfolio__slider__item__params__item__text">Постов</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__slider__item swiper-slide">
+                                        <h3 class="portfolio__slider__item__title">
+                                            Freedom Finance Insurence
+                                        </h3>
+                                        <p class="portfolio__slider__item__description">
+                                            <b>Цель проекта:</b> Сайт рыбатекст поможет дизайнеру, верстальщику,
+                                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на
+                                            русском языке, а начинающему оратору отточить навык публичных выступлений. <br> <br>
+
+                                            <b>Проделанная работа:</b> При создании генератора мы использовали небезизвестный
+                                            универсальный код речей. Текст генерируется абзацами случайным образом от двух
+                                            до десяти предложений в абзаце, что позволяет сделать текст более привлекательным
+                                            и живым для визуально-слухового восприятия.
+                                            <br> <br>
+
+                                            <b>Результат:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                            сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском
+                                            языке, а начинающему оратору отточить навык публичных выступлений в домашних
+                                            условиях.
+                                        </p>
+                                        <div class="portfolio__slider__item__params">
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">5120</div>
+                                                <div class="portfolio__slider__item__params__item__text">Подписчиков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">10250</div>
+                                                <div class="portfolio__slider__item__params__item__text">Лайков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">2500</div>
+                                                <div class="portfolio__slider__item__params__item__text">Постов</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__slider__item swiper-slide">
+                                        <h3 class="portfolio__slider__item__title">
+                                            Freedom Finance Insurence
+                                        </h3>
+                                        <p class="portfolio__slider__item__description">
+                                            <b>Цель проекта:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, <br>
+                                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на <br>
+                                            русском языке, а начинающему оратору отточить навык публичных выступлений. <br> <br>
+
+                                            <b>Проделанная работа:</b> При создании генератора мы использовали небезизвестный <br>
+                                            универсальный код речей. Текст генерируется абзацами случайным образом от двух <br>
+                                            до десяти предложений в абзаце, что позволяет сделать текст более привлекательным <br>
+                                            и живым для визуально-слухового восприятия.<br> <br>
+
+                                            <b>Результат:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру <br>
+                                            сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском <br>
+                                            языке, а начинающему оратору отточить навык публичных выступлений в домашних <br>
+                                            условиях.
+                                        </p>
+                                        <div class="portfolio__slider__item__params">
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">5120</div>
+                                                <div class="portfolio__slider__item__params__item__text">Подписчиков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">10250</div>
+                                                <div class="portfolio__slider__item__params__item__text">Лайков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">2500</div>
+                                                <div class="portfolio__slider__item__params__item__text">Постов</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__slider__item swiper-slide">
+                                        <h3 class="portfolio__slider__item__title">
+                                            Freedom Finance Insurence
+                                        </h3>
+                                        <p class="portfolio__slider__item__description">
+                                            <b>Цель проекта:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, <br>
+                                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на <br>
+                                            русском языке, а начинающему оратору отточить навык публичных выступлений. <br> <br>
+
+                                            <b>Проделанная работа:</b> При создании генератора мы использовали небезизвестный <br>
+                                            универсальный код речей. Текст генерируется абзацами случайным образом от двух <br>
+                                            до десяти предложений в абзаце, что позволяет сделать текст более привлекательным <br>
+                                            и живым для визуально-слухового восприятия.<br> <br>
+
+                                            <b>Результат:</b> Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру <br>
+                                            сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском <br>
+                                            языке, а начинающему оратору отточить навык публичных выступлений в домашних <br>
+                                            условиях.
+                                        </p>
+                                        <div class="portfolio__slider__item__params">
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">5120</div>
+                                                <div class="portfolio__slider__item__params__item__text">Подписчиков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">10250</div>
+                                                <div class="portfolio__slider__item__params__item__text">Лайков</div>
+                                            </div>
+                                            <div class="portfolio__slider__item__params__item">
+                                                <div class="portfolio__slider__item__params__item__num">2500</div>
+                                                <div class="portfolio__slider__item__params__item__text">Постов</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__slider__navigation">
+                        <div class="swiper-button-prev portfolio__slider__navigation__prev">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 12.4105L1 6.80724L7 1.20398" stroke="#EDEDED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <div class="swiper-pagination portfolio__slider__pagination"></div>
+
+                        <div class="swiper-button-next portfolio__slider__navigation__next">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 12.4105L7 6.80724L1 1.20398" stroke="#EDEDED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('_footer.html')
+    <script src="js/app.js"></script>
+    <script src="js/hover.js"></script>
+    <script src="js/swiper.js"></script>
+</body>
+</html>
