@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // events
   cardBtns.forEach((cardBtn) => cardBtn.addEventListener("click", (e) => openCard(e)));
-  window.addEventListener("click", (e) => closeCard(e));
+  window.addEventListener("click", (e) => closeCard(e), {passive: true});
 
 
   // functions

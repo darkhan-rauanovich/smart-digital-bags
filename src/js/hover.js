@@ -19,11 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
       if (mouseover) {
-          spot.style.opacity = "1"
-          shadow.style.opacity = "1";
+            requestAnimationFrame(() => {
+                spot.style.opacity = "1"
+                shadow.style.opacity = "1";
+            });
       } else {
-          spot.style.opacity = "0"
-          shadow.style.opacity = "0";
+            requestAnimationFrame(() => {
+            spot.style.opacity = "0"
+            shadow.style.opacity = "0";
+        });
       }
   }
 })
