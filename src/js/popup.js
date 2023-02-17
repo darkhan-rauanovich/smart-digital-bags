@@ -1,29 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btnPopup = document.querySelector("#open-popup");
-  const popup = document.querySelector("#popup");
-  const closePopup = document.querySelector(".order-popup__close");
+  // uis
+  const openBtns = document.querySelectorAll(".open-popup");
+  const closeBtns = document.querySelectorAll(".close-popup");
+  const popups = document.querySelectorAll(".popup");
 
+  // events
+  openBtns.forEach((btn) => btn.addEventListener("click", () => onOpen(btn)))
+  closeBtns.forEach((btn) => btn.addEventListener("click", () => onClose(btn)))
+  window.addEventListener("scroll", () => popups.forEach((popup) => closePopup(popup)));
 
-  btnPopup.addEventListener("click", () => {
-    popup.classList.add("active");
-  })
+  // functions
 
-  popup.addEventListener("click", (e) => {
-    const el = e.target;
-    const popupContent = el.closest(".order-popup__content");
+  function onOpen(btn) {
+    const dataPopup = btn.dataset.popup;
+    const popup = document.querySelector(`#${dataPopup}`);
 
-    if (!popupContent) {
-      popup.classList.remove("active");
+    openPopup(popup);
+  }
+
+  function onClose(btn) {
+    const popup = btn.closest(".popup");
+
+    if (popup) {
+      closePopup(popup);
     }
-  })
+  }
 
-  window.addEventListener("scroll", () => {
-    popup.classList.remove("active");
-  })
+  function openPopup(popup) {
+    popup.classList.add("active");
+  }
 
-  closePopup.addEventListener("click", () => {
+  function closePopup(popup) {
     popup.classList.remove("active");
-  })
+  }
 })
-
-
