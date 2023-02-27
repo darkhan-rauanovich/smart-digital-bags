@@ -24,19 +24,20 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollContainer: true,
     mousewheel: true,
     grabCursor: true,
-
-    breakpoints: {
-      768: {
-        direction: "horizontal",
-      },
-      320: {
-        direction: "horizontal",
-      },
-    }
   })
+
+  var mq = window.matchMedia("(max-width: 768px)");
+
+  if(mq.matches) {
+    sliderPortfolioDevice.changeDirection('horizontal', true);
+  } else {
+    sliderPortfolioDevice.changeDirection('vertical', true);
+  }
+
 
   sliderPortfolio.controller.control = sliderPortfolioDevice;
   sliderPortfolioDevice.controller.control = sliderPortfolio;
+
 
   sliderPortfolioDevice.on('slideChange', function () {
     setTimeout(function () {
@@ -115,6 +116,15 @@ document.addEventListener("DOMContentLoaded", function() {
       dynamicBullets: true,
       dynamicMainBullets: 1
     },
+
+    breakpoints: {
+      375: {
+        slidesPerView: 1.5,
+      },
+      200: {
+        slidesPerView: 1,
+      }
+    }
   })
 
 

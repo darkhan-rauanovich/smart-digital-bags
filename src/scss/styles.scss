@@ -353,6 +353,7 @@ input {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
 
     &__mobile {
         display: none;
@@ -445,11 +446,12 @@ input {
     padding-bottom: 150px;
     background-color: var(--bg-dark);
     overflow: hidden;
+    position: relative;
 
 
     &__article {
         position: absolute;
-        bottom: 170px;
+        top: 240px;
         z-index: 10;
     }
 
@@ -1009,6 +1011,7 @@ input {
 .clients {
     padding: 150px 0 100px 0;
     position: relative;
+    user-select: none;
 
     &__bg {
         position: absolute;
@@ -1171,6 +1174,10 @@ input {
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    &__bg-mobile {
+        display: none;
     }
 
     &__wrapper {
@@ -1413,10 +1420,6 @@ input {
     .first-bags {
         padding-top: calc(var(--header) + 50px);
 
-        &__article {
-            bottom: 140px;
-        }
-
         &__preview {
             &__inner {
                 &__shadows {
@@ -1513,7 +1516,7 @@ input {
         }
 
         &__article {
-            bottom: 230px;
+            top: 200px;
             box-sizing: border-box;
         }
 
@@ -1575,10 +1578,6 @@ input {
 @media (max-width: 1025px) {
     .first-bags {
         padding-bottom: 100px;
-
-        &__article {
-            bottom: 50%;
-        }
 
         &__description {
             font-size: 16px;
@@ -1718,6 +1717,7 @@ input {
     }
 
     .header {
+        z-index: 3;
         &__wrapper {
             display: none;
         }
@@ -1725,7 +1725,6 @@ input {
         &__mobile {
             display: block;
             position: relative;
-            z-index: 55;
             transition: 0.3s all ease;
 
             &.active {
@@ -1897,6 +1896,27 @@ input {
                 width: 105px;
             }
         }
+
+        &__top {
+            &__description {
+                max-width: 300px;
+            }
+        }
+
+        &__bg {
+            display: none;
+        }
+
+        &__bg-mobile {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 
     .first-bags {
@@ -1914,6 +1934,8 @@ input {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            top: 0;
+            z-index: 2;
         }
     }
 
@@ -2100,6 +2122,8 @@ input {
     }
 
     .clients {
+        padding: 50px 0 50px 0;
+
         &__slider {
             display: none;
 
@@ -2120,11 +2144,11 @@ input {
                             justify-content: center;
                             border: 2px solid var(--border-color);
                             height: 100px;
-                            margin-bottom: 20px;
+                            margin-bottom: 15px;
                             border-radius: 4px;
 
                             &__img {
-                                max-width: 160px;
+                                max-width: 140px;
                                 max-height: 80px;
                             }
                         }
@@ -2200,6 +2224,13 @@ input {
             line-height: 120%;
             text-align: center;
         }
+
+        &__close {
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 }
 
@@ -2236,6 +2267,26 @@ input {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .portfolio {
+        &__device {
+            width: 250px;
+            height: 500px;
+
+            &__screen {
+                width: 220px;
+                height: 425px;
+            }
+        }
+
+        &__content {
+            &__left {
+                height: 500px;
             }
         }
     }
