@@ -82,7 +82,7 @@ button,
   color: var(--text-white);
   position: relative;
   border: 2px solid var(--dark-blue);
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
   cursor: pointer;
 }
 
@@ -751,7 +751,7 @@ input::placeholder {
 
 .your-bag__grid__item {
   width: 370px;
-  height: 600px;
+  height: 670px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,7 +905,7 @@ input::placeholder {
 .your-bag__grid__item__info__icon {
   width: 80px;
   height: auto;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .your-bag__grid__item__info__title {
@@ -913,7 +913,7 @@ input::placeholder {
   line-height: 110%;
   font-family: "Proxima-Nova Bold";
   color: var(--text-white);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -922,7 +922,7 @@ input::placeholder {
 }
 
 .your-bag__grid__item__info__list__item {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -930,6 +930,8 @@ input::placeholder {
 
 .your-bag__grid__item__info__list__item__star {
   margin: 3px 7px 0 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .your-bag__grid__item__info__list__item__text {
@@ -938,16 +940,23 @@ input::placeholder {
   color: var(--text-black-soft);
 }
 
-.your-bag__grid__item__info__btn {
-  margin-top: auto;
-}
-
 .your-bag__grid__item__info__tr {
   position: absolute;
   left: 6px;
   top: 6px;
   opacity: 0.4;
   z-index: 2;
+}
+
+.your-bag__grid__item__info__price {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--text-black-soft);
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 .your-bag__grid__item:nth-child(1) .your-bag__grid__item__info__bg {
@@ -2315,7 +2324,7 @@ input::placeholder {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 420px;
+    height: 570px;
     border-radius: 4px;
   }
 
@@ -2325,6 +2334,15 @@ input::placeholder {
     -o-object-fit: cover;
        object-fit: cover;
     opacity: 1;
+  }
+
+  .your-bag__slider__item .your-bag__grid__item .your-bag__grid__item__info {
+    padding: 15px;
+  }
+
+  .your-bag__slider__item .your-bag__grid__item .your-bag__grid__item__info__price {
+    font-size: 30px;
+    margin-bottom: 0px;
   }
 
   .your-bag__slider__item .your-bag__grid__item .your-bag__grid__item__content {
@@ -2381,6 +2399,7 @@ input::placeholder {
 
   .your-bag__slider__item .your-bag__grid__item .your-bag__grid__item__img {
     height: 260px;
+    margin-top: auto;
   }
 
   .your-bag__slider__item .your-bag__grid__item .your-bag__grid__item__btn {

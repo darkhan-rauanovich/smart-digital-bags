@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(window.innerWidth);
 
   if (window.innerWidth <= 768) {
-    const maxString = 80;
+    const maxString = 180;
     const texts = document.querySelectorAll(".portfolio__slider__item__description__item");
 
     texts.forEach((item) => {

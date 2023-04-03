@@ -105,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
     autoplay: {
       dealy: 1000,
     },
+    initialSlide: 1,
   })
 
   var bagsMobileSlider = new Swiper(".your-bag__slider", {
@@ -119,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     breakpoints: {
       375: {
-        slidesPerView: 1.5,
+        slidesPerView: 1.2,
       },
       200: {
         slidesPerView: 1,

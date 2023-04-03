@@ -71,7 +71,7 @@ button, .btn {
     color: var(--text-white);
     position: relative;
     border: 2px solid var(--dark-blue);
-    letter-spacing: 2px;
+    letter-spacing: 1.2px;
     cursor: pointer;
 
     &::before {
@@ -648,7 +648,7 @@ input {
 
         &__item {
             width: 370px;
-            height: 600px;
+            height: 670px;
             position: relative;
             display: flex;
             align-items: center;
@@ -764,7 +764,7 @@ input {
                 &__icon {
                     width: 80px;
                     height: auto;
-                    margin-bottom: 35px;
+                    margin-bottom: 15px;
                 }
 
                 &__title {
@@ -772,7 +772,7 @@ input {
                     line-height: 110%;
                     font-family: "Proxima-Nova Bold";
                     color: var(--text-white);
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
                     text-align: center;
                 }
 
@@ -780,11 +780,12 @@ input {
                     list-style-type: none;
 
                     &__item {
-                        margin-bottom: 15px;
+                        margin-bottom: 5px;
                         display: flex;
 
                         &__star {
                             margin: 3px 7px 0 0;
+                            flex-shrink: 0;
                         }
 
                         &__text {
@@ -795,16 +796,22 @@ input {
                     }
                 }
 
-                &__btn {
-                    margin-top: auto;
-                }
-
                 &__tr {
                     position: absolute;
                     left: 6px;
                     top: 6px;
                     opacity: 0.4;
                     z-index: 2;
+                }
+                &__price {
+                    font-size: 40px;
+                    font-weight: 800;
+                    color: var(--text-black-soft);
+                    text-align: center;
+                    width: 100%;
+                    display: block;
+                    margin-top: auto;
+                    margin-bottom: 20px;
                 }
             }
 
@@ -2007,7 +2014,7 @@ input {
                     padding: 0;
                     margin: 0;
                     width: 100%;
-                    height: 420px;
+                    height: 570px;
                     border-radius: 4px;
 
                     .your-bag__grid__item__bg {
@@ -2015,6 +2022,15 @@ input {
                         height: 100%;
                         object-fit: cover;
                         opacity: 1;
+                    }
+
+                    .your-bag__grid__item__info {
+                        padding: 15px;
+                    }
+
+                    .your-bag__grid__item__info__price {
+                        font-size: 30px;
+                        margin-bottom: 0px;
                     }
 
                     .your-bag__grid__item__content {
@@ -2064,6 +2080,7 @@ input {
 
                     .your-bag__grid__item__img {
                         height: 260px;
+                        margin-top: auto;
                     }
 
                     .your-bag__grid__item__btn {
